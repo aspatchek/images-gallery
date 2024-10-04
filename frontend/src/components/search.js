@@ -1,7 +1,12 @@
 import React from "react";
 import Form from 'react-bootstrap/Form';
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap"; // Uses js destructuring syntax
 
+/*
+* Custom Search component. When the state variable changes, 
+* This component edits the state variable, not the DOM directly. 
+* This component is build using other React Bootstrap components.
+*/
 const Search = ({word, setWord, handleSubmit}) => {
   return (
     <Container className="mt-4">
